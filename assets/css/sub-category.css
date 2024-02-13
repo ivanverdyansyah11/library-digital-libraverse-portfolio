@@ -1,0 +1,61 @@
+section.hero-book .input-search {
+    width: 100%;
+    position: relative;
+    padding: 19px 26px;
+    background-color: var(--bg-gradient-color);
+    background-image: var(--gradient-color);
+    border: 1px solid rgba(var(--light-color), 0.12);
+    border-radius: 9999px;
+    outline: none;
+    stroke: none;
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 0.52);
+    font-family: var(--urbanist-medium);
+}
+
+section.hero-book .input-search::placeholder {
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 0.52);
+    font-family: var(--urbanist-medium);
+}
+
+section.hero-book .content-gap {
+    margin-top: 32px;
+}
+
+section.hero-book .result-search {
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 0.52);
+    margin-top: 14px;
+    font-family: var(--urbanist-medium);
+}
+
+section.hero-book .content-book {
+    transition: 0ms !important;
+}
+
+section.hero-book .content-book.hide {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    z-index: -9999;
+    transition: 0ms !important;
+}
+
+section.hero-book .content-book.show {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0ms !important;
+}
+
+@media (max-width: 767.98px) {
+    section.hero-book .headline {
+        margin-bottom: 42px;
+    }
+
+    section.hero-book .content-gap {
+        margin-top: 16px;
+    }
+}
