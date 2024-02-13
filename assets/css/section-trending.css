@@ -1,0 +1,34 @@
+section.trending .card-default .card-default-author,
+section.book .card-default .card-default-author {
+    font-size: 0.875rem;
+    color: rgba(var(--primary-color), 1);
+    margin-bottom: 2px;
+}
+
+section.trending .card-default .card-default-price,
+section.book .card-default .card-default-price {
+    font-size: 1rem;
+    color: rgba(var(--light-color), 1);
+    font-family: var(--urbanist-bold);
+    margin-top: 10px;
+}
+
+section.trending .card-default .card-default-title,
+section.book .card-default .card-default-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+section.trending .card-default .card-default-description,
+section.book .card-default .card-default-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
