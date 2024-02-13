@@ -1,0 +1,63 @@
+footer.footer {
+    padding-top: 122px;
+    border-top: 1px solid rgba(var(--light-color), 0.12);
+    background-color: var(--bg-gradient-color);
+    background-image: var(--gradient-color);
+}
+
+footer.footer .footer-brand {
+    margin-bottom: 20px;
+}
+
+footer.footer .footer-title {
+    font-size: 1.063rem;
+    color: rgba(var(--light-color), 1);
+    margin-bottom: 16px;
+}
+
+footer.footer .footer-link {
+    gap: 16px;
+}
+
+footer.footer .footer-item {
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 0.52);
+}
+
+footer.footer .footer-item:hover {
+    color: rgba(var(--light-color), 1);
+}
+
+footer.footer .sosmed-link {
+    gap: 4px;
+}
+
+footer.footer .sosmed-item {
+    width: 42px;
+    height: 42px;
+    background-color: rgba(var(--dark-color), 1);
+    border-radius: 2px;
+    border: 1px solid rgba(var(--light-color), 0.12);
+}
+
+footer.footer .sosmed-item:hover {
+    border: 1px solid rgba(var(--light-color), 1);
+}
+
+footer.footer .copyright {
+    margin-top: 100px;
+    color: rgba(var(--light-color), 0.52);
+    font-size: 0.875rem;
+    padding: 24px 0;
+    border-top: 1px solid rgba(var(--light-color), 0.12);
+}
+
+@media (max-width: 767.98px) {
+    footer.footer .footer-title {
+        font-size: 1rem;
+    }
+
+    footer.footer .footer-item {
+        font-size: 0.875rem;
+    }
+}
