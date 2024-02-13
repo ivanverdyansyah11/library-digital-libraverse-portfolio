@@ -1,0 +1,7 @@
+.card-default .benefit-icon {
+    width: 54px;
+    height: 54px;
+    background-color: rgba(var(--primary-color), 1);
+    border-radius: 9999px;
+    margin-bottom: 16px;
+}
