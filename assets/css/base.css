@@ -288,6 +288,74 @@ button {
     color: rgba(var(--light-color), 1);
 }
 
+.scroll-top {
+    width: 100%;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    transition: left 0ms !important;
+    transition: opacity 300ms !important;
+    opacity: 1;
+}
+
+.scroll-top.hide {
+    opacity: 0;
+    left: 150%;
+}
+
+.scroll-top .button-scroll {
+    width: 54px;
+    height: 54px;
+    background-color: rgba(var(--dark-color), 1);
+    border-radius: 9999px;
+    border: 2px solid rgba(var(--light-color), 0.12);
+}
+
+.scroll-top .button-scroll:hover {
+    border-color: rgba(var(--light-color), 0.52);
+}
+
+@media (min-width: 576px) {
+    .scroll-top {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .scroll-top {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .scroll-top {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .scroll-top {
+        width: 1140px;
+    }
+
+    .scroll-top .button-scroll {
+        width: 50px;
+        height: 50px;
+    }
+
+    .scroll-top .button-scroll img {
+        width: 14px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .scroll-top {
+        width: 1320px;
+    }
+}
+
 @media (max-width: 991.98px) {
     .content-gap {
         margin-top: 36px;
