@@ -114,56 +114,6 @@ section.about .fact-wrapper .item-caption {
     line-height: 120%;
 }
 
-/* PARALLAX */
-section.about .title,
-section.about .paragraph-one,
-section.about .paragraph-two {
-    transform: translateY(20px);
-    opacity: 0;   
-}
-
-section.about .wrapper-image {
-    opacity: 0;
-}
-
-section.about .title.show,
-section.about .paragraph-one.show,
-section.about .paragraph-two.show {
-    animation: fade-up 600ms forwards;
-}
-
-section.about .wrapper-image.show {
-    animation: fade 600ms forwards;
-}
-
-@keyframes fade-up {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    } to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-right {
-    from {
-        transform: translateX(-20px);
-        opacity: 0;
-    } to {
-        transform: translateX(-0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-}
-
 @media (max-width: 767.98px) {
     section.about .fact-wrapper .item-value {
         font-size: 2.25rem;
