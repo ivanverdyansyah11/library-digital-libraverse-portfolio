@@ -2,11 +2,19 @@ const linkCategories = document.getElementById('link_categories');
 const cardCategories = document.querySelector('.card-categories');
 const hamburger = document.querySelector('.hamburger-wrapper');
 const topbar = document.querySelector('.topbar');
+const topbarLink = document.querySelectorAll('.topbar-link .nav-link');
 const body = document.querySelector('#home');
 
 hamburger.addEventListener('click', function() {
     topbar.classList.toggle('hide');
     body.classList.toggle('active');
+});
+
+topbarLink.forEach(link => {
+    link.addEventListener('click', function() {
+        topbar.classList.toggle('hide');
+        body.classList.toggle('active');
+    })
 });
 
 linkCategories.addEventListener('mouseover', function() {
