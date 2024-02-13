@@ -1,0 +1,24 @@
+section.hero {
+    margin: 82px 0;
+}
+
+section.hero .headline {
+    margin-bottom: 22px;
+}
+
+section.hero .paragraph {
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+@media (min-width: 1200px) {
+    section.hero .paragraph {
+        width: 75%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    section.hero {
+        margin: 52px 0;
+    }
+}
