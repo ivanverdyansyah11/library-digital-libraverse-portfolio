@@ -1,0 +1,35 @@
+section.faq .card-default {
+    width: 100%;
+}
+
+section.faq .card-default .card-default-title {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+section.faq .card-default .arrow-icon {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 9999px;
+    background-color: rgba(var(--primary-color), 1);
+}
+
+section.faq .card-default .card-default-description {
+    padding-top: 12px;
+    margin-top: 18px;
+    border-top: 1px solid rgba(var(--light-color), 0.12);
+}
+
+section.faq .card-default .paragraph-wrapper {
+    height: 0;
+    overflow: hidden;
+}
+
+section.faq .card-default.show .paragraph-wrapper {
+    height: 100%;
+    overflow: auto;
+}
+
+section.faq .card-default.show img {
+    rotate: 180deg;
+}
