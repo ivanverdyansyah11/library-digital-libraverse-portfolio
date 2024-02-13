@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.hamburger-wrapper');
 const topbar = document.querySelector('.topbar');
 const topbarLink = document.querySelectorAll('.topbar-link .nav-link');
 const body = document.querySelector('#home');
+const scrollTop = document.querySelector('.scroll-top');
 
 hamburger.addEventListener('click', function() {
     topbar.classList.toggle('hide');
@@ -33,9 +34,14 @@ cardCategories.addEventListener('mouseout', function() {
     cardCategories.classList.remove('show');
 });
 
-// $('.page-scroll').on('click', function(e) {
-//     let href = $(this).attr('href');
-//     let element = $(href);
-//     $('html').scrollTop(element.offset().top - 118);
-//     e.preventDefault();
-// });
+$(window).scroll(function() {
+    let wScroll = $(this).scrollTop();
+
+    if (wScroll > 400 ) {
+        scrollTop.classList.remove('hide');
+    }
+
+    if (wScroll < 400 ) {
+        scrollTop.classList.add('hide');
+    }
+});
