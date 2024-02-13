@@ -1,0 +1,23 @@
+section.testimonial .card-default:hover {
+    border-color: rgba(var(--light-color), 0.12);
+}
+
+section.testimonial .card-default img {
+    border-radius: 9999px;
+    margin-bottom: 16px;
+}
+
+section.testimonial .card-default .card-default-description {
+    margin-bottom: 18px;    
+}
+
+section.testimonial .card-default .username {
+    font-size: 1rem;
+    font-family: var(--urbanist-semibold);
+    color: rgba(var(--light-color), 1);
+}
+
+section.testimonial .card-default .job {
+    font-size: 0.813rem;
+    color: rgba(var(--primary-color), 1);
+}
