@@ -1,0 +1,171 @@
+.wrapper-image {
+    padding: 32px;
+    border-radius: 32px;
+    background-color: var(--bg-gradient-color);
+    background-image: var(--gradient-color);
+}
+
+.wrapper-image > img {
+    border-radius: 20px;
+    filter: saturate(0);
+}
+
+.wrapper-image:hover > img {
+    filter: saturate(100%);
+}
+
+section.about .title {
+    margin-bottom: 28px;
+}
+
+section.about .scroll-button {
+    width: 100%;
+    overflow-x: auto;
+}
+
+section.about .button-group {
+    margin-bottom: 24px;
+    width: fit-content;
+}
+
+section.about .button-small {
+    width: 100%;
+    all: unset;
+    padding: 12px 18px;
+    font-size: 0.813rem;
+    color: rgba(var(--light-color), 1);
+    border-radius: 9999px;
+    cursor: pointer;
+    border: 1px solid rgba(var(--light-color), 0.12);
+    gap: 8px;
+    transition: var(--transition-duration);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-gradient-color);
+    background-image: var(--gradient-color);
+}
+
+section.about .button-small > * {
+    position: relative;
+    transition: var(--transition-duration);
+    white-space: nowrap;
+}
+
+section.about .button-small::before {
+    content: "";
+    width: 400px;
+    height: 100px;
+    background-color: rgba(var(--light-color), 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    rotate: 90deg;
+    transform-origin: left top;
+    transition: var(--transition-duration);
+}
+
+section.about .button-small:hover {
+    color: rgba(var(--dark-color), 1);
+}
+
+section.about .button-small:hover::before {
+    rotate: 0deg;
+}
+
+section.about .button-small.active {
+    background-color: rgba(var(--light-color), 1);
+}
+
+section.about .button-small.active > * {
+    color: rgba(var(--dark-color), 1);
+}
+
+section.about .paragraph-about {
+    transform: translateY(0);
+    opacity: 1;
+    margin-bottom: 36px;
+}
+
+section.about .paragraph-about.hide {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+section.about .paragraph-about .paragraph-small:first-child {
+    margin-bottom: 8px;
+}
+
+section.about .fact-wrapper {
+    padding-top: 22px;
+    border-top: 1px solid rgba(var(--light-color), 0.12);
+}
+
+section.about .fact-wrapper .item-value {
+    font-size: 2.75rem;
+    color: rgba(var(--primary-color), 1);
+    margin-bottom: 8px;
+    line-height: 110%;
+    font-family: var(--urbanist-bold) !important;
+}
+
+section.about .fact-wrapper .item-caption {
+    color: rgba(var(--light-color), 0.72);
+    font-size: 0.875rem;
+    line-height: 120%;
+}
+
+/* PARALLAX */
+section.about .title,
+section.about .paragraph-one,
+section.about .paragraph-two {
+    transform: translateY(20px);
+    opacity: 0;   
+}
+
+section.about .wrapper-image {
+    opacity: 0;
+}
+
+section.about .title.show,
+section.about .paragraph-one.show,
+section.about .paragraph-two.show {
+    animation: fade-up 600ms forwards;
+}
+
+section.about .wrapper-image.show {
+    animation: fade 600ms forwards;
+}
+
+@keyframes fade-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    } to {
+        transform: translateX(-0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767.98px) {
+    section.about .fact-wrapper .item-value {
+        font-size: 2.25rem;
+    }
+}
