@@ -1,0 +1,98 @@
+.modal .modal-content {
+    background-color: rgba(var(--dark-color), 1);
+    border-radius: 32px;
+    padding: 36px 32px;
+    border: 1px solid rgba(var(--light-color), 0.12);
+}
+
+.modal .content-class .header-wrapper,
+.modal .content-benefit .header-wrapper,
+.modal .content-portfolio .header-wrapper {
+    margin-bottom: 16px;
+}
+
+.modal .content-class .modal-headline,
+.modal .content-benefit .modal-headline,
+.modal .content-portfolio .modal-headline {
+    font-size: 1.5rem;
+    font-family: var(--urbanist-semibold) !important;
+}
+
+.modal .content-class .modal-description,
+.modal .content-benefit .modal-description,
+.modal .content-portfolio .modal-description {
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 0.52);
+    margin-bottom: 18px;
+}
+
+.modal .content-benefit .modal-description {
+    margin-bottom: 32px;
+}
+
+.modal .content-class .checklist-wrapper,
+.modal .content-benefit .checklist-wrapper,
+.modal .content-portfolio .checklist-wrapper {
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.modal .content-class .checklist-item,
+.modal .content-benefit .checklist-item,
+.modal .content-portfolio .checklist-item {
+    gap: 14px;
+}
+
+.modal .content-class .checklist-value,
+.modal .content-benefit .checklist-value,
+.modal .content-portfolio .checklist-value {
+    font-size: 0.875rem;
+    color: rgba(var(--light-color), 0.72);
+}
+
+.modal .button-modal {
+    border: 1px solid rgba(var(--light-color), 0.12);
+    border-radius: 9999px;
+    background-color: rgba(var(--dark-color), 1);
+    width: 100%;
+    padding: 18px 22px;
+    stroke: none;
+    outline: none;
+    font-size: 0.875rem;
+    color: rgba(var(--light-color), 1);
+}
+
+.modal .button-modal:hover {
+    border-color: rgba(var(--light-color), 1);
+}
+
+.modal .button-modal:hover > img {
+    transform: translateX(-6px);
+}
+
+.modal .button-modal:last-child > img {
+    rotate: 180deg;
+}
+
+.modal .content-portfolio .portfolio-image {
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.modal .content-portfolio .technology-wrapper {
+    gap: 6px;
+    margin-bottom: 32px;
+}
+
+.modal .content-portfolio .technology-wrapper .technology-item {
+    padding: 10px;
+    background-color: rgba(var(--light-color), 0.03);
+    border-radius: 2px;
+    color: rgba(var(--light-color), 0.72);
+    font-size: 0.813rem;
+    font-family: var(--urbanist-medium);
+}
+
+.modal .content-portfolio .button-modal {
+    text-align: center;
+}
