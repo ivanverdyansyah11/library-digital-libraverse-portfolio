@@ -17,7 +17,7 @@ section.cta .paragraph {
 
 section.cta .style {
     position: absolute;
-    width: 200%;
+    width: 300%;
     height: 200%;
     background-color: rgba(var(--light-color), 0.01);
     top: 0;
